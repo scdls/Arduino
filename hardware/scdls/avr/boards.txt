@@ -8,6 +8,8 @@ dash.build.mcu=atmega328p
 
 dash.upload.tool=avrdude
 dash.upload.protocol=arduino
+dash.upload.maximum_size=30720
+dash.upload.maximum_data_size=2048
 
 dash.bootloader.tool=avrdude
 dash.bootloader.unlock_bits=0x3F
