@@ -1,0 +1,19 @@
+## SCDLS board rev 1.0
+## -------------------
+## Very similar to the Nano, but we specify the processor and set
+## the speed ourselves.  No "processor" option.
+dash.name=SCDLS rev 1.0 ("Dash")
+
+dash.build.mcu=atmega328p
+
+dash.upload.tool=avrdude
+dash.upload.protocol=arduino
+
+dash.bootloader.tool=avrdude
+dash.bootloader.unlock_bits=0x3F
+dash.bootloader.lock_bits=0x0F
+
+dash.build.f_cpu=8000000L
+dash.build.board=AVR_NANO
+dash.build.core=arduino
+dash.build.variant=eightanaloginputs
